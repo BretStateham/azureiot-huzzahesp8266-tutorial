@@ -4,7 +4,15 @@
 
 This is my variation on the Adafruit Huzzah ESP8266 Azure IoT Starter Kit getting started walkthrough.  I created this version to help clarify the code from the official tutorial and make it easier to understand what you would need to modify it for your own use.
 
-I also wanted to be able to look at alternative flows for the message data in Azure including the use of IoT Hub Routes, Azure Functions, logic apps and more.
+I also wanted to be able to look at alternative flows for the message data in Azure including the use of IoT Hub Routes, Azure Functions, logic apps and more over time.
+
+Throughout this tutorial you will create the following solution architecture:
+
+![Solution Architecture](./Images/SolutionArchitecture.png)
+
+---
+
+<a name="prereqs"></a>
 
 ## Prerequisites
 
