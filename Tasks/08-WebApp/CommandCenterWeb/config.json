@@ -1,0 +1,10 @@
+{
+    "port": "3000",
+    "eventHubName": "creativedayeventhub",
+    "ehConnString": "Endpoint=sb://creativedaybus.servicebus.windows.net/;SharedAccessKeyName=readwrite;SharedAccessKey=itxRavurjQ27Tejq7t4oCBIbmSwqceztQNTlJZ3yPsc=",
+    "deviceConnString": "HostName=creativedayiothub.azure-devices.net;DeviceId=huzzah01;SharedAccessKey=xsqBRQ3/hjPSDDDZWaEWbiNHdNRM2ZwSAiDEiowb/fA=",
+    "iotHubConnString": "HostName=creativedayiothub.azure-devices.net;SharedAccessKeyName=service;SharedAccessKey=+z2x4gq1aJUf9AovwxXim1RdLJRt1EcbSSjBUeluJ/w=",
+    "storageAcountName": "creativedaystorage",
+    "storageAccountKey": "uv4S7CHUUsRUPEFHZ2BmhLvzpSlzV4ymJn1NKeEn5qPpYWCe9hE4ErCf+a+GOFNXoTPsIDvEZ8hDOnuiS25/vA==",
+    "storageTable": "SensorData"
+} 
