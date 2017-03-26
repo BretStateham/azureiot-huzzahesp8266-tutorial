@@ -1,5 +1,4 @@
-# Adafruit Huzzah Feather ESP8266 Device Setup
-
+# Task Title
 ---
 
 <a name="overview"></a>
@@ -55,3 +54,4 @@ Follow these steps:
 
 In this task, you chose how you were going to name the resources you create in this lab by decided on a "**_`<name>`_**" prefix, you chose a the Location where all the resources would be created.  Then, in the Azure Portal, you created a new Dashboard to store all the tiles for the resources you create in a convenient place, and finally created an Azure Resource Group in which you will create all the resources.  
 
+Next Step: [05-StreamAnalyticsJob](../05-StreamAnalyticsJob/README.md)
