@@ -25,29 +25,29 @@ The solution that you develop throughout this tutorial looks like this:
 
 ![Solution Architecture](../../Images/SolutionArchitecture.png)
 
-If you look at the diagram above, you will see a number of resources that have names that match the "**_`<name>xxxx`_**" pattern.  These names are made up of a "**_`<name>`_**" prefix, and some resource type "**_`xxxx`_**" .  For example, "**_`<name>group`_**", "**_`<name>iothub`_**", "**_`<name>asajob`_**", "**_`<name>storage`_**" , etc.  It is **_strongly recommended that you conform to this naming convention as you work through this tutorial_**.  It will help you to understand what resources are being referred to in the documentation as well as help you to identify what each resource is when you see it in the portal, etc.
+If you look at the diagram above, you will see a number of resources that have names that match the "**`<name>xxxx`**" pattern.  These names are made up of a "**`<name>`**" prefix, and some resource type "**`xxxx`**" .  For example, "**`<name>group`**", "**`<name>iothub`**", "**`<name>asajob`**", "**`<name>storage`**" , etc.  It is **_strongly recommended that you conform to this naming convention as you work through this tutorial_**.  It will help you to understand what resources are being referred to in the documentation as well as help you to identify what each resource is when you see it in the portal, etc.
 
-To use this naming convention though, you need to come up with a good "**_`<name>`_**" prefix for your resource names.  The "**_`<name>`_**" prefix you choose:
+To use this naming convention though, you need to come up with a good "**`<name>`**" prefix for your resource names.  The "**`<name>`**" prefix you choose:
 
 - Must be all lower case - some of the services, like Azure Storage Accounts, require their names to be all lower case.  To conform you should just user lower case in all instances.
 - Must be alpha-numeric only, and start with a letter (no special characters, spaces, underlines, dashes, etc). These names are often used to make DNS Fully Qualified Domain Names (FQDN)s.  And as such your name should conform to DNS naming rules.
 
 
-Following are some possible suggestions of how to come up with your own "**_`<name>`_**" prefix:
+Following are some possible suggestions of how to come up with your own "**`<name>`**" prefix:
 
-- A lower case single word version of your team name at a hackathon  For example if your team name was "iSaveWater", you might use "**_`isavewater`_**" as your "**_`<name>`_**".  Then your resource names would look something like  "**_`isavewatergroup`_**", "**_`isavewateriothub`_**", "**_`isavewaterasajob`_**", etc.
-- Your first, middle and last initials along with your birth month and day in MMDD format.  For example, if your name were Jane Q. Doe and you were born of February 17th, you might use "**_`jqd0217`_**" as your "**_`<name>`_**" and have resource names like "**_`jqd0217group`_**", "**_`jqd0217iothub`_**", "**_`jqd0217asajob`_**", etc.
+- A lower case single word version of your team name at a hackathon  For example if your team name was "iSaveWater", you might use "**`isavewater`**" as your "**`<name>`**".  Then your resource names would look something like  "**`isavewatergroup`**", "**`isavewateriothub`**", "**`isavewaterasajob`**", etc.
+- Your first, middle and last initials along with your birth month and day in MMDD format.  For example, if your name were Jane Q. Doe and you were born of February 17th, you might use "**`jqd0217`**" as your "**`<name>`**" and have resource names like "**`jqd0217group`**", "**`jqd0217iothub`**", "**`jqd0217asajob`**", etc.
 
-For the purposes of this tutorial we'll use "**_`ahgst`_**" short for "**A**"dafruit "**H**"uzzah "**G**"etting "**S**"tarted "**T**"utorial as the sample "**_`<name>`_**" prefix. **DO NOT USE "_`ahgst`_" yourself!**
+For the purposes of this tutorial we'll use "**`ahgst`**" short for "**A**"dafruit "**H**"uzzah "**G**"etting "**S**"tarted "**T**"utorial as the sample "**`<name>`**" prefix. **DO NOT USE "_`ahgst`_" yourself!**
 
 1. Use the information above to come up with a good name prefix
-1. Open the folder where you extracted the repository for this tutorial to in Visual Studio Code, then open the "**_`myresources.txt`_**" file.
+1. Open the folder where you extracted the repository for this tutorial to in Visual Studio Code, then open the "**`myresources.txt`**" file.
 
     ![myresources.txt](./Images/01010-MyResourcesFile.png)
 
-1. In the "**_`myresources.txt`_** file, under the "**_`Naming Convetion, Region & Group`_**" header, find the "**_`Naming convention prefix`_**" and replace the "**_`<paste your name prefix here>`_**" place holder with the name prefix you selected above selected and save your changes.  For example, using our  "**_`ahgst`_**"  sample prefix, we would change:
+1. In the "**`myresources.txt`**" file, under the "**`Naming Convetion, Region & Group`**" header, find the "**`Naming convention prefix`**" and replace the "**`<paste your name prefix here>`**" place holder with the name prefix you selected above selected and save your changes.  For example, using our  "**`ahgst`**"  sample prefix, we would change:
 
-    > **Note**: We'll use the "**_`myresources.txt`_**" file repeatedly throughout this tutorial to keep track of the resources and key peices of information we need.
+    > **Note**: We'll use the "**`myresources.txt`**" file repeatedly throughout this tutorial to keep track of the resources and key peices of information we need.
 
     ```text
     Use this file to keep track of the resources, ids, connection strings, access tokens, etc. for the various resources you are create throughout this lab.
@@ -96,9 +96,9 @@ For this tutorial we will be using the following resources:
 
 You can review the <a target="_blank" href="https://azure.microsoft.com/en-us/regions/services/">Products available by region</a> to verify the resources you want to use are available in the data center you choose.
 
-For this tutorial, we will use the "**_`westus`_**" location.  You can choose to use a different one if you wish.
+For this tutorial, we will use the "**`westus`**" location.  You can choose to use a different one if you wish.
 
-1. In the "**_`myresources.txt`_** file, find the "**_`Region (data center):`_**" and replace the "**_`<paste your region name here>`_**" place holder with the name prefix you selected above selected and save your changes.  For example, when using the  "**_`westus`_**"  location, we would change:
+1. In the "**`myresources.txt`**" file, find the "**`Region (data center):`**" and replace the "**`<paste your region name here>`**" place holder with the location you decided on above and save your changes.  For example, when using the  "**`westus`**"  location, we would change:
 
     ```text
     ...
@@ -138,7 +138,7 @@ In these steps, we'll begin preparing the Azure Portal to help us create and man
 
     ![New Dashboard](./Images/01020-NewDashboard.png)
 
-1. Name the dashboard using the "**_`<name>`_**" prefix you chose above, then click the **"Done customizing"** button.  Here's an example using our "**_`ahgst`_**" sample prefix:
+1. Name the dashboard using the "**`<name>`**" prefix you chose above, then click the **"Done customizing"** button.  Here's an example using our "**`ahgst`**" sample prefix:
 
     ![Name Dashboard](./Images/01030-DashboardName.png)
 
@@ -152,19 +152,20 @@ In these steps, we'll begin preparing the Azure Portal to help us create and man
 
 ## Create and Use a Single Resource Group
 
-The final step in this Azure Prep walkthrough is to create the Azure Resource Group that all of the resources in this tutorial will be placed in.  
+The final step in this Azure Prep walkthrough is to create the Azure Resource Group that all of the resources in this tutorial will be placed in.
+
 1. With the <a target="_blank" href="https://portal.azure.com">Azure Portal</a> (<a target="_blank" href="https://portal.azure.com">https://portal.azure.com</a>) open in your browser, and the dashboard you created previously opened, click the **"+ New"** button in the top left corner, then scroll down and  select **"Resource Group"**:
 
     ![New Resource Group](./Images/01050-NewResourceGroup.png)
 
 1. in the **"Resource Group"** blade that opens, complete the fields as follows, and click the **"Create"** button:
 
-    - Resource Group name:  "**_`<name>group`_**" using the name prefix you selected above
+    - Resource Group name:  "**`<name>group`**" using the name prefix you selected above
     - Subscription: **Choose the Azure Subscription you want to use** if you have access to multiple subscriptions.
     - Resource group location: **Use the location you chose above**
     - Pin to dashboard: **Checked**
 
-    For example, using the "**_`ahgst`_**" name prefix and "**_`westus`_**" loication:
+    For example, using the "**`ahgst`**" name prefix and "**`westus`**" loication:
 
     ![New Resource Group Blade](./Images/01060-NewResourceBlade.png)
 
@@ -172,15 +173,40 @@ The final step in this Azure Prep walkthrough is to create the Azure Resource Gr
 
     ![Close the New Resoruce Group Blade](./Images/01060-NewResourceBlade.png)
 
+
+1. In the "**`myresources.txt`**" file, find the "**`Resource Group Name:`**" and replace the "**`<paste your resource group name here>`**" place holder with the "**`<name>group`**" name you used for your resource group and save your changes.  For example, when using the resource group name "**`ahgstgroup`**", we would change:
+
+    ```text
+    ...
+
+    Resource Group Name:
+    <paste your resource group name here>
+
+    ...
+    ```
+
+    to:
+
+    ```text
+    ...
+
+    Resource Group Name:
+    ahgstgroup
+
+    ...
+    ```
+
+
+
 ---
 
 <a name="sumnmary"></a>
 
 ## Summary and Next Step
 
-In this task, you chose how you were going to name the resources you create in this lab by decided on a "**_`<name>`_**" prefix, you chose a the Location where all the resources would be created.  Then, in the Azure Portal, you created a new Dashboard to store all the tiles for the resources you create in a convenient place, and finally created an Azure Resource Group in which you will create all the resources.  
+In this task, you chose how you were going to name the resources you create in this lab by decided on a "**`<name>`**" prefix, you chose a the Location where all the resources would be created.  Then, in the Azure Portal, you created a new Dashboard to store all the tiles for the resources you create in a convenient place, and finally created an Azure Resource Group in which you will create all the resources.  
 
-Next Step: [02-IoTHub](../02-IoTHub/README.md)
+Next Step: [Configure the Azure IoT Hub](../02-IoTHub/README.md)
 
 
 

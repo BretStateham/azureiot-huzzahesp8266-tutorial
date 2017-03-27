@@ -33,26 +33,14 @@ IoT Hub Device Connection String:
 <paste your IoT Hub device's primary connection string here>
 
 ========================================
-Azure SQL Database Resources 
+Azure Storage Resources 
 ========================================
 
-Azure SQL Database Name:
-<paste your Azure SQL Database name here>
+Azure Storage Account Name:
+<paste your Azure Storage Account Name here>
 
-Azure SQL Server Name:
-<paste your Azure SQL server name here>
-
-Azure SQL Server Fully Qualified Domain Name (FQDN):
-<paste your Azure SQL Database name here>.database.windows.net
-
-Azure SQL Server Login (sqladmin is recommeded):
-<paste your sql admin login name here>
-
-Azure SQL Server Qualified SQL Login:
-<paste your sql admin login name here>@<paste your Azure SQL Server name here>
-
-Azure SQL Server Password (P@ssw0rd is recommended):
-<paste your sql admin password here>
+Azure Storage Account Primary Key:
+<paste your Azure Storage Account Primary Key here>
 
 ========================================
 Azure Event Hub Resources
